@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="pretest.css" />
+    <script src="../jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>Online Shopee</header>
+    <br />
+    <nav>
+      <li>
+        <a href="pretest.html">Home</a>
+        <a href="#home">Products</a>
+        <a href="#home">Shops</a>
+        <a href="pretest2.html">Registered</a>
+        <a href="#home">Signin</a>
+      </li>
+    </nav>
+    <br />
+    <section class="form">
+      <form id="form" onsubmit="return showLoginForm()">
+        <table>
+          <tr>
+            <td colspan="2"><h1>Member Information</h1></td>
+          </tr>
+          <!-- Họ tên -->
+          <tr>
+            <td class="left"><label for="username">Full Name</label></td>
+            <td>
+              <input
+                id="username"
+                type="text"
+                name="username"
+                type="text"
+                required
+              />
+            </td>
+          </tr>
+          <!-- Giới tính -->
+          <tr>
+            <td class="left"><label for="gender">Gender</label></td>
+            <td>
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                class="gender"
+                required
+              /><label for="male">Male</label>
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                class="gender"
+                required
+              /><label for="female">Female</label>
+            </td>
+          </tr>
+          <!-- Sở thích -->
+          <tr>
+            <td class="left"><label for="hobbies">Hobbies</label></td>
+            <td>
+              <input type="checkbox" class="hobbies" value="shopping" /><label
+                for="shopping"
+                >Shopping</label
+              >
+              <input type="checkbox" class="hobbies" value="eating" /><label
+                for="eating"
+                >Eating out</label
+              >
+              <input type="checkbox" class="hobbies" value="sporting" /><label
+                for="sproting"
+                >Sporting</label
+              >
+            </td>
+          </tr>
+          <!-- Ngày sinh -->
+          <tr>
+            <td class="left">
+              <label for="birthday">Date of Birth</label>
+            </td>
+            <td>
+              <input type="date" name="birthday" id="birthday" required />
+            </td>
+          </tr>
+          <!-- Địa chỉ -->
+          <tr>
+            <td class="left"><label for="address">Address</label></td>
+            <td><input id="address" name="address" type="text" required /></td>
+          </tr>
+          <!-- Email -->
+          <tr>
+            <td class="left"><label for="email">Email</label></td>
+            <td><input id="email" name="email" type="email" required /></td>
+          </tr>
+          <!-- Điện thoại -->
+          <tr>
+            <td class="left"><label for="phone">Phone</label></td>
+            <td><input id="phone" name="phone" type="text" required /></td>
+          </tr>
+          <!-- Thành phố -->
+          <tr>
+            <td class="left"><label for="city">City</label></td>
+            <td>
+              <select name="city" size="1" id="city" required>
+                <option class="city" value="">---Select---</option>
+                <option class="city" value="SaiGon">SaiGon</option>
+                <option class="city" value="Hue">Hue</option>
+                <option class="city" value="DaNang">DaNang</option>
+                <option class="city" value="HaiPhong">HaiPhong</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Comment -->
+          <tr>
+            <td class="left">
+              <label for="Comment">Comment</label>
+            </td>
+            <td>
+              <textarea name="" id="comment" cols="40" rows="5"></textarea>
+            </td>
+          </tr>
+          <!-- Nút nhấn -->
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+          <!-- Thông báo lỗi -->
+          <tr id="hidden" hidden>
+            <td colspan="2" id="output"><div></div></td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <br />
+    <footer>
+      Shope <sup>&copy;</sup> Copyright 2022. All rights reserved.
+    </footer>
+    <script src="pretest.js"></script>
+  </body>
+</html>
